@@ -16,15 +16,29 @@
         <div class="gif_container">
             <img src="https://i.postimg.cc/wTDG30TB/yes.gif" alt="Cute animated illustration" />
         </div>
-        <button class="btn" id="yesButton" onclick="nextPage()">
+        <button id="emailButton" class="btn" id="yesButton" onclick="nextPage()">
             Let's Fix a Date
         </button>
     </div>
-    <script>
+<!--     <script>
         function nextPage() {
             window.location.href = "https://www.instagram.com/hritik6614/";
         }
-    </script>
+    </script> -->
+    <script>
+  // JavaScript to redirect to email when button is clicked
+  document.getElementById('emailButton').addEventListener('click', function() {
+    // Replace 'email@example.com' with the desired email address
+    var email = 'singhhritik560@gmail.com';
+    // Replace 'subject' and 'body' with desired email subject and body
+    var subject = 'Subject goes here';
+    var body = 'Body goes here';
+    // Constructing the mailto URL
+    var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    // Redirecting to the mailto URL
+    window.location.href = mailtoLink;
+  });
+</script>
 </body>
 
 </html>
